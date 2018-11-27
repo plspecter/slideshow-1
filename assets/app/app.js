@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     //locate the images you want to be in the slide show..
     //make them into an array to choose from
-    var images = ["pictures/giphy.gif", "pictures/pickle2.jpg", "pictures/pickle3.jpg", "pictures/pickle4.gif"]
+    var images = ["pictures/pickle1.jpg", "pictures/pickle2.jpg", "pictures/pickle3.jpg", "pictures/pickle4.gif"];
 
     // Variable showImage will hold the setInterval when we start the slideshow
     var showImage;
@@ -12,15 +12,16 @@ $(document).ready(function () {
     var count = 0;
 
     //use jquery to run :startSlideshow" when we click the start button
-    $("#start").click(startSlideshow);
+    $(".start").click(startSlideshow);
 
     //and this will stop it
-    $("#stop").click(stopSlideshow);
+    $(".stop").click(stopSlideshow);
 
     //this function will replace display whenever image it's given
     //in the src attribute of the img tag
     function displayImage() {
-        $("#image-holder").html("<img src=" + images[count] + "width='400px'>");
+        $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
+
     }
 
     //when its time to flip to the next image
@@ -29,7 +30,7 @@ $(document).ready(function () {
         count++
 
         //show the loading gif in the image-holder div
-        $("#image-holder").html("<img src='../giphy.gif' width='200px'/>");
+        $("#image-holder").html("<img src='pictures/giphy.gif' width='200px' 'margin-left:auto' 'margin-right:auto' 'text-align:center'/>");
 
         //setTimeout to run the displayImage after 1 second
         setTimeout(displayImage, 1000)
