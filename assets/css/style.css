@@ -62,7 +62,7 @@ body {
 h1 {
     font-size: 30px;
     position: relative;
-    left: -200px;
+    left: -30%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -72,7 +72,7 @@ h1 {
 
 #image-holder {
     position: relative;
-    top: 120px;
+    top: 100px;
     flex-shrink: inherit; 
     text-align: center;
     }

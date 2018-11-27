@@ -20,7 +20,7 @@ $(document).ready(function () {
     //this function will replace display whenever image it's given
     //in the src attribute of the img tag
     function displayImage() {
-        $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
+        $("#image-holder").html("<img src=" + images[count] + " width='210px'>");
 
     }
 
@@ -30,7 +30,7 @@ $(document).ready(function () {
         count++
 
         //show the loading gif in the image-holder div
-        $("#image-holder").html("<img src='pictures/giphy.gif' width='200px' 'margin-left:auto' 'margin-right:auto' 'text-align:center'/>");
+        $("#image-holder").html("<img src='pictures/giphy.gif' width='120px' 'position: relative' 'top:200px' 'margin-left:auto' 'margin-right:auto' 'text-align:center'/>");
 
         //setTimeout to run the displayImage after 1 second
         setTimeout(displayImage, 1000)
